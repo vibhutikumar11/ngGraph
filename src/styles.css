@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Roboto', sans-serif; 
+    color: #313131;
+    overflow-y: hidden;
+}
+
+.header h1{
+    color: #313131;
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.header h1 > span{
+    font-size: 30px;
+}
+
+.header .fa-angle-right{
+    margin: 0px 10px;
+}
+
+.header{
+    padding-top: 15px;
+    height: 100px;
+}
+
+.graphWrap{
+    padding: 0px 90px;
+    height: calc(100vh - 100px);
+    position: relative;
+    border-top: 1px solid #ececec;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: auto;
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 60px;
+  width: 50px;
+  outline: black;
+  background-color: #252525;
+  background-size: 100%, 100%;
+  border: 1px solid black;
+  background-image: none;
+  position: relative;
+
+}
+
+.carousel-control-next-icon:after,.carousel-control-prev-icon:after
+{
+  content: '';
+  background: url(assets/images/slider-leftArrow.png) no-repeat center center;
+  width: 13px;
+  height: 23px;
+
+  position: absolute;
+  top: 50%;
+  left:50%;
+  margin-top: -13px;
+  margin-left: -6px;
+}
+
+.carousel-control-prev-icon:after {
+    transform: rotate(180deg);
+}
