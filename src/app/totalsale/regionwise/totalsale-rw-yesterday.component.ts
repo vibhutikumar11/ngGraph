@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 
 
+
 @Component({
   selector: 'app-totalsale-rw-yesterday',
   templateUrl: './totalsale-rw-yesterday.component.html'
@@ -39,6 +40,7 @@ export class TotalsaleRwYesterdayComponent   {
     },
     options: {
       responsive:true,
+      animation: false,
       maintainAspectRatio:false,
       scales: {
         xAxes: [{

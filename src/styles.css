@@ -69,3 +69,7 @@ body{
 .carousel-control-prev-icon:after {
     transform: rotate(180deg);
 }
+
+.chartjs-render-monitor{
+    height: 500px !important;
+}

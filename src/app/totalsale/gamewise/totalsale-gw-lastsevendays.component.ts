@@ -30,7 +30,7 @@ export class TotalsaleGwLastsevendaysComponent implements OnInit {
         ]
     },
     options: {
-      responsive:false,
+      responsive:true,
       maintainAspectRatio:false,
       scales: {
         xAxes: [{

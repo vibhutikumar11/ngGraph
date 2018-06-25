@@ -10,6 +10,7 @@ import { TotalsaleRwPreviousmonthComponent } from './totalsale/regionwise/totals
 import { TotalsaleGwLastsevendaysComponent } from './totalsale/gamewise/totalsale-gw-lastsevendays.component';
 import { TotalsaleTrendgraphComponent } from './totalsale/totalsale-trendgraph.component';
 import { TopfiveRetailerSaleComponent } from './totalsale/topfive-retailer-sale.component';
+import { ActiveAndInactiveRetailerTodayComponent } from './active-and-inactive-retailer-today.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { TopfiveRetailerSaleComponent } from './totalsale/topfive-retailer-sale.
     TotalsaleGwLastsevendaysComponent,
     TotalsaleTrendgraphComponent,
     TopfiveRetailerSaleComponent,
+    ActiveAndInactiveRetailerTodayComponent,
 
 
   ],

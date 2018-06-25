@@ -45,7 +45,7 @@ export class TotalsaleTrendgraphComponent implements OnInit {
         
     },
     options: {
-      responsive:false,
+      responsive:true,
       maintainAspectRatio:false,
       scales: {
         xAxes: [{
