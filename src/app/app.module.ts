@@ -17,6 +17,9 @@ import { DailyTotalDepositAndDailyTotalSaleRegionWiseLastMonthComponent } from '
 import { ActiveAndInactiveRetailerLastSevenDaysComponent } from './active-and-inactive-retailer-last-seven-days.component';
 import { TopTenHighestSaleRetailersBothGameYesterdayComponent } from './top-ten-highest-sale-retailers-both-game-yesterday.component';
 import { TopTenHighestSaleRetailersBothGameLastMonthComponent } from './top-ten-highest-sale-retailers-both-game-last-month.component';
+import { TopTenHighestDepositRetailersBothGameYesterdayComponent } from './top-ten-highest-deposit-retailers-both-game-yesterday.component';
+import { TopTenHighestDepositRetailersBothGameLastMonthComponent } from './top-ten-highest-deposit-retailers-both-game-last-month.component';
+import { TopTenHighestDepositRetailersBothGameLastMonthAccraComponent } from './top-ten-highest-deposit-retailers-both-game-last-month-accra.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { TopTenHighestSaleRetailersBothGameLastMonthComponent } from './top-ten-
     ActiveAndInactiveRetailerLastSevenDaysComponent,
     TopTenHighestSaleRetailersBothGameYesterdayComponent,
     TopTenHighestSaleRetailersBothGameLastMonthComponent,
+    TopTenHighestDepositRetailersBothGameYesterdayComponent,
+    TopTenHighestDepositRetailersBothGameLastMonthComponent,
+    TopTenHighestDepositRetailersBothGameLastMonthAccraComponent,
 
 
   ],
