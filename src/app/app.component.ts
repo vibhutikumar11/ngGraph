@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import 'chartjs-plugin-datalabels';
 
 @Component({
   selector: 'app-root',

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
-import 'chart.piecelabel.js';
 
 @Component({
   selector: 'app-active-and-inactive-retailer-today',
@@ -29,21 +28,24 @@ export class ActiveAndInactiveRetailerTodayComponent implements OnInit {
         }]
     },
     options: {
+      plugins: {
+        datalabels: {
+          color: 'white',
+          anchor:'center',
+          font: {
+            weight: 'bold',
+            size: '26'
+          }
+        }
+      },
       events: false,
-      position: 'bottom',
       tooltips: {
         enabled: false
       },
       responsive:true,
       animation: false,
       maintainAspectRatio:false,
-      cutoutPercentage:35,
-      pieceLabel: {
-         render: 'percentage',
-         precision: 2,
-         fontColor: ['white','white'],
-         fontSize: 20
-      }
+      cutoutPercentage:35
     }
 
     });

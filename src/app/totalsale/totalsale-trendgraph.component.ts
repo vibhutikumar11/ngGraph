@@ -45,6 +45,19 @@ export class TotalsaleTrendgraphComponent implements OnInit {
         
     },
     options: {
+      plugins: {
+        datalabels: {
+          color: 'white',
+          backgroundColor: function(context) {
+            return context.dataset.backgroundColor;
+          },
+          borderRadius: 4,
+          anchor:'center',
+          font: {
+            weight: 'bold'
+          }
+        }
+      },
       responsive:true,
       maintainAspectRatio:false,
       scales: {

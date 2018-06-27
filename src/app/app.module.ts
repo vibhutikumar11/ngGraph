@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
+
+
 import { AppComponent } from './app.component';
 import { TotalsaleRwYesterdayComponent } from './totalSale/regionWise/totalsale-rw-yesterday.component';
 import { TotalsaleRwLastsevendaysComponent } from './totalsale/regionwise/totalsale-rw-lastsevendays.component';

@@ -25,42 +25,53 @@ topfiveRetailerSale: any;
               fill: false,
               backgroundColor: "#116cc9",
               borderColor: "#116cc9",
-              data: [50, 43, 6, 40, 23]
-
-              
+              data: [30, 45, 40, 45, 50]    
           },
           {
               label: "Retailer 2",
               fill: false,
               backgroundColor: "#f87910",
               borderColor: "#f87910",
-              data: [45, 46, 50, 4, 39]
+              data: [40, 35, 45, 20, 50]
           },
           {
             label: "Retailer 3",
             fill: false,
             backgroundColor: "#534741",
             borderColor: "#534741",
-            data: [1, 21, 34, 17, 18]
+            data: [30, 20, 34, 17, 18]
           },
           {
             label: "Retailer 4",
             fill: false,
             backgroundColor: "#00746b",
             borderColor: "#00746b",
-            data: [39, 22, 35, 4, 44]
+            data: [30, 25, 40, 5, 45]
           },
           {
             label: "Retailer 5",
             fill: false,
             backgroundColor: "#ed1c24",
             borderColor: "#ed1c24",
-            data: [26, 15, 16, 29, 36]
+            data: [20, 15, 16, 29, 36]
           }
         ]
         
     },
     options: {
+      plugins: {
+        datalabels: {
+          color: 'white',
+          backgroundColor: function(context) {
+            return context.dataset.backgroundColor;
+          },
+          borderRadius: 4,
+          anchor:'center',
+          font: {
+            weight: 'bold'
+          }
+        }
+      },
       responsive:true,
       maintainAspectRatio:false,
       scales: {

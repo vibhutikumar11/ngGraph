@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 
 
-
 @Component({
   selector: 'app-totalsale-rw-yesterday',
   templateUrl: './totalsale-rw-yesterday.component.html'
@@ -22,7 +21,7 @@ export class TotalsaleRwYesterdayComponent   {
         labels: ["Region 1", "Region 2", "Region 3", "Region 4", "Region 5", "Region 6","Region 7","Region 8","Region 9","Region 10"],
         datasets: [{
             label: 'Total sale amount',
-            data: [40, 30, 24.8, 18.8, 25, 24,13.5, 45, 23, 50],
+            data: [40, 30, 24, 18, 25, 24,13, 45, 23, 50],
             backgroundColor: [
                 'rgba(17, 108, 201, 1)',
                 'rgba(17, 108, 201, 1)',
@@ -39,6 +38,16 @@ export class TotalsaleRwYesterdayComponent   {
         }]
     },
     options: {
+      plugins: {
+        datalabels: {
+          color: 'white',
+          anchor:'center',
+          font: {
+            weight: 'bold',
+            size:'16'
+          }
+        }
+      },
       responsive:true,
       animation: false,
       maintainAspectRatio:false,

@@ -22,7 +22,7 @@ export class TotalsaleRwLastsevendaysComponent implements OnInit {
         labels: ["Region 1", "Region 2", "Region 3", "Region 4", "Region 5", "Region 6","Region 7","Region 8","Region 9","Region 10"],
         datasets: [{
             label: 'Total sale amount',
-            data: [25, 24,13.5, 45, 23, 50, 40, 30, 24.8, 18.8],
+            data: [25, 24,13, 45, 23, 50, 40, 30, 24, 18],
             backgroundColor: [
                 'rgba(0, 52, 113, 1)',
                 'rgba(0, 52, 113, 1)',
@@ -39,6 +39,16 @@ export class TotalsaleRwLastsevendaysComponent implements OnInit {
         }]
     },
     options: {
+      plugins: {
+        datalabels: {
+          color: 'white',
+          anchor:'center',
+          font: {
+            weight: 'bold',
+            size:'16'
+          }
+        }
+      },
       responsive:true,
       maintainAspectRatio:false,
       scales: {

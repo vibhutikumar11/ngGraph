@@ -19,7 +19,7 @@ export class TopTenHighestSaleRetailersBothGameLastMonthComponent implements OnI
         labels: ["Region 1", "Region 2", "Region 3", "Region 4", "Region 5", "Region 6","Region 7","Region 8","Region 9","Region 10"],
         datasets: [{
             label: 'Total sale amount Both game',
-            data: [18.8, 25, 24,13.5, 45, 23, 50,40, 30, 24.8],
+            data: [18, 25, 24,13, 45,40, 30, 24, 23, 50],
             backgroundColor: [
                 '#7d4900',
                 '#7d4900',
@@ -36,6 +36,16 @@ export class TopTenHighestSaleRetailersBothGameLastMonthComponent implements OnI
         }]
     },
     options: {
+      plugins: {
+        datalabels: {
+          color: 'white',
+          anchor:'center',
+          font: {
+            weight: 'bold',
+            size:'16'
+          }
+        }
+      },
       responsive:true,
       animation: false,
       maintainAspectRatio:false,

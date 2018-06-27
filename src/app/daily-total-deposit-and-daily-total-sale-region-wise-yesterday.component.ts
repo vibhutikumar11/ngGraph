@@ -32,13 +32,25 @@ export class DailyTotalDepositAndDailyTotalSaleRegionWiseYesterdayComponent impl
         ]
     },
     options: {
+      plugins: {
+        datalabels: {
+          color: 'white',
+          anchor:'center',
+          font: {
+            weight: 'bold',
+            size:'14'
+          }
+        }
+      },
       responsive:true,
       maintainAspectRatio:false,
       scales: {
         xAxes: [{
-          barPercentage: 0.4,
+          barThickness : 35,
+          barPercentage: 0.9,
+          categoryPercentage: 0.8,
           ticks: {
-            fontSize: 15,
+            fontSize: 13,
             fontColor: "#666666",
             fontFamily: 'Roboto'
           }

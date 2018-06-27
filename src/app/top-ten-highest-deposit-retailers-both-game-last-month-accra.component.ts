@@ -20,7 +20,7 @@ export class TopTenHighestDepositRetailersBothGameLastMonthAccraComponent implem
         labels: ["Region 1", "Region 2", "Region 3", "Region 4", "Region 5", "Region 6","Region 7","Region 8","Region 9","Region 10"],
         datasets: [{
             label: 'Total deposit amount Both game',
-            data: [23, 50,40, 30, 24.8,18.8, 25, 24,13.5, 45],
+            data: [23,24,18, 25, 24,13, 45, 50,40, 30],
             backgroundColor: [
                 '#003471',
                 '#003471',
@@ -37,6 +37,16 @@ export class TopTenHighestDepositRetailersBothGameLastMonthAccraComponent implem
         }]
     },
     options: {
+      plugins: {
+        datalabels: {
+          color: 'white',
+          anchor:'center',
+          font: {
+            weight: 'bold',
+            size:'16'
+          }
+        }
+      },
       responsive:true,
       animation: false,
       maintainAspectRatio:false,
@@ -44,7 +54,7 @@ export class TopTenHighestDepositRetailersBothGameLastMonthAccraComponent implem
         xAxes: [{
           barPercentage: 0.4,
           ticks: {
-            fontSize: 15,
+            fontSize: 13,
             fontColor: "#666666",
             fontFamily: 'Roboto'
           }
